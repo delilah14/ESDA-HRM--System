@@ -1,0 +1,9 @@
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\bin\Debug\netstandard2.0\ESDAModel.deps.json
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\bin\Debug\netstandard2.0\ESDAModel.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\bin\Debug\netstandard2.0\ESDAModel.pdb
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.csprojAssemblyReference.cache
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.csproj.CoreCompileInputs.cache
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.AssemblyInfoInputs.cache
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.AssemblyInfo.cs
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAModel\obj\Debug\netstandard2.0\ESDAModel.pdb

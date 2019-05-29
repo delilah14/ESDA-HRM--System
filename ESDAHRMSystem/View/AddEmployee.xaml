@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="ESDAHRMSystem.View.AddEmployee"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800" Background="White"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <StackPanel Name="MainAddEmpStackPanel" Height="800">
+        <TextBlock
+    Style="{StaticResource MaterialDesignDisplay1TextBlock}">
+  Add new employee
+        </TextBlock>
+
+        <Grid Name="FieldGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+               
+                <TextBox Grid.Column="0" Grid.Row="0" x:Name="Fname"
+    Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+    VerticalAlignment="Top"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    MaxWidth="400"
+    materialDesign:HintAssist.Hint="First Name"
+     />
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="Mname"
+    Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+    VerticalAlignment="Top"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    MaxWidth="400"
+    materialDesign:HintAssist.Hint="Father's Name"
+     />
+                <TextBox Grid.Column="2" Grid.Row="0" x:Name="Lname"
+    Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+    VerticalAlignment="Top"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    MaxWidth="400"
+    materialDesign:HintAssist.Hint="Grand father's Name"
+     />
+            <TextBox Grid.Column="0" Grid.Row="1" x:Name="Salary"
+    Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+    VerticalAlignment="Top"
+    AcceptsReturn="True"
+    TextWrapping="Wrap"
+    MaxWidth="400"
+    materialDesign:HintAssist.Hint="Salary"
+     />
+            <DatePicker Grid.Column="1" Grid.Row="3" x:Name="DOB"
+  Width="100"
+  materialDesign:HintAssist.Hint="Pick Date"
+  Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+            <ComboBox
+  materialDesign:HintAssist.Hint="Gender"  Grid.Column="1" Grid.Row="1"
+                
+  
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" Loaded="ComboBox_Loaded" x:Name="GenderCombo" Margin="0,0,10,0">
+
+            </ComboBox>
+            <ComboBox   Grid.Column="2" Grid.Row="1"
+  materialDesign:HintAssist.Hint="Job"
+ 
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" Loaded="MiddleNameCombo_Loaded" x:Name="JobCombo">
+
+            </ComboBox>
+            <ComboBox   Grid.Column="0" Grid.Row="2"
+  materialDesign:HintAssist.Hint="Education Level"
+  
+  Style="{StaticResource MaterialDesignFloatingHintComboBox}" Loaded="EducationCombo_Loaded" x:Name="EducationCombo">
+
+            </ComboBox>
+            <Button x:Name="pictureButton"   Grid.Column="1" Grid.Row="2"
+    Style="{StaticResource MaterialDesignRaisedButton}" 
+   
+    ToolTip="Resource name: MaterialDesignRaisedButton" Click="pictureButton_Click"  HorizontalAlignment="Center" VerticalAlignment="Center">
+               Add picture
+            </Button>
+            <Button x:Name="resumeButton"   Grid.Column="2" Grid.Row="2"
+    Style="{StaticResource MaterialDesignRaisedButton}" 
+   
+    ToolTip="Resource name: MaterialDesignRaisedButton" Click="resumeButton_Click"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                Add Resume here
+            </Button>
+            <Button x:Name="medicalButton"   Grid.Column="0" Grid.Row="3"
+    Style="{StaticResource MaterialDesignRaisedButton}" 
+   
+    ToolTip="Resource name: MaterialDesignRaisedButton" Click="medicalButton_Click"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                Add Medical Report
+            </Button>
+
+            <Button x:Name="saveButton"   Grid.Column="0" Grid.Row="4"
+    Style="{StaticResource MaterialDesignRaisedButton}" 
+   
+    ToolTip="Resource name: MaterialDesignRaisedButton" Click="saveButton_Click"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                Save
+            </Button>
+
+            <Button x:Name="cancelButton"   Grid.Column="1" Grid.Row="4"
+    Style="{StaticResource MaterialDesignRaisedButton}" 
+   
+    ToolTip="Resource name: MaterialDesignRaisedButton" Click="CancelButton_Click"  HorizontalAlignment="Center" VerticalAlignment="Center">
+               Cancel
+            </Button>
+
+        </Grid>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="ESDAHRMSystem.View.EmployeeCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ESDAHRMSystem.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             >
+    <Grid>
+        <StackPanel Grid.Row="0"  Grid.Column="1">
+            <materialDesign:Card Height="200" Width="250">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                       
+                    </Grid.ColumnDefinitions>
+
+                    <Image Name="employeeCardImage"
+                           Source="../Images/images.png" Height="70" Width="70" HorizontalAlignment="Left" Margin="10,0,30,0" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0"></Image>
+                        <TextBlock Grid.Column="2" Grid.Row="0" Name="EmployeeCardName"
+    Style="{StaticResource MaterialDesignTitleTextBlock}" Foreground="#FF0028FF">
+                            Name
+                        </TextBlock>
+                    <TextBlock  Grid.Column="1" Grid.Row="1" Name="EmployeeCardJob"
+    Style="{StaticResource MaterialDesignBody1TextBlock}">
+                            Job
+                        </TextBlock>
+                    <TextBlock  Grid.Column="1" Grid.Row="2" Name="EmployeeCardHouse"
+    Style="{StaticResource MaterialDesignBody1TextBlock}">
+                            house
+                        </TextBlock>
+
+                    <TextBlock  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3"  Name="EmployeeCardEmail"
+    Style="{StaticResource MaterialDesignBody1TextBlock}" Margin="50,0" >
+                        <materialDesign:PackIcon Kind="Email" />
+                            email
+                    </TextBlock>
+                    <TextBlock  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4"  Margin="50,0" Name="EmployeeCardMobile"
+    Style="{StaticResource MaterialDesignBody1TextBlock}">
+                        <materialDesign:PackIcon Kind="MobilePhoneAndroid" />
+                            mobile
+                    </TextBlock>
+                </Grid>
+                
+            </materialDesign:Card>
+        </StackPanel>
+    </Grid>
+</UserControl>

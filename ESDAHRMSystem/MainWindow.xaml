@@ -1,0 +1,120 @@
+﻿<Window x:Class="ESDAHRMSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESDAHRMSystem"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         Height="450" Width="800">
+    <Grid Name="MainWindowGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+           
+            <ColumnDefinition Width="0.7*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+    
+    <StackPanel Grid.Column="0" Height="1000">
+    <TreeView Name="MainWindowTreeView"
+  MinWidth="220" Background="#FFD5EFF9" Foreground="#FF1F03BB" Height="1000">
+                <TreeViewItem Height="150" HorizontalAlignment="Left" Margin="0,0,50,0" Background="#FF1F03BB">
+                    <TreeViewItem.Header>
+                        <StackPanel >
+                            <Button Name="ImageButton" MinHeight="100" MinWidth="100" HorizontalAlignment="Left"
+  Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+  ToolTip="MaterialDesignFloatingActionAccentButton" Click="ImageButton_Click" Margin="0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="56">
+
+                                <Viewbox MinHeight="300" MinWidth="100" Margin="0" HorizontalAlignment="Center">
+
+                                    <Image Name="ImageButtonImage"  Source="images/images.png"/>
+
+                                </Viewbox>
+                            </Button>
+                            <Border
+      Background="{DynamicResource MaterialDesignDivider}"
+      Height="1"
+      HorizontalAlignment="Stretch"
+      SnapsToDevicePixels="True" />
+                           
+                            <StackPanel>
+                           
+                                
+                            </StackPanel>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                    
+                </TreeViewItem>
+                <TreeViewItem
+    Header="Employee" Background="{x:Null}" Foreground="#FF1F03BB" IsExpanded="true">
+                   
+                   
+                    <TreeViewItem Selected="TreeViewItem_Selected" Name="ViewEmployeeTreeView">
+                        <TreeViewItem.Header>
+
+                            <TextBlock
+            Margin="8 0 0 0">
+                    View Employee
+                            </TextBlock>
+
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem  Name="AddEmployeeTreeView" Selected="AddEmployeeTreeView_Selected">
+                        <TreeViewItem.Header>
+
+                            <TextBlock
+            Margin="8 0 0 0">
+                    Add Employee
+                            </TextBlock>
+
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                   
+                   
+                   
+                </TreeViewItem>
+                <TreeViewItem
+    Header="Children" Background="{x:Null}" Foreground="#FF1F03BB" IsExpanded="true" >
+                    <TreeViewItem Name="AddChildrenTreeView" Selected="AddChildrenTreeView_Selected" >
+                        <TreeViewItem.Header>
+
+                            <TextBlock
+            Margin="8 0 0 0">
+                    Add Children
+                            </TextBlock>
+
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem  Name="ChildrenTreeView" Selected="ChildrenTreeView_Selected">
+                        <TreeViewItem.Header>
+
+                            <TextBlock
+            Margin="8 0 0 0">
+                    Children
+                            </TextBlock>
+
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem Foreground="#FF1F03BB"
+      Header="Integrated Children" Name="HOHTree" Selected="HOHTree_Selected"/>
+                  
+
+                   
+                </TreeViewItem>
+            </TreeView>
+    </StackPanel>
+        <StackPanel Grid.Column="1" x:Name="MainStackPanel" Background="#FF1F03BB">
+            <materialDesign:Card Height="50" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,150,0,0" >
+                <TextBlock Name="WelcomeTextBlock"
+    Style="{StaticResource MaterialDesignTitleTextBlock}">
+                
+                </TextBlock>
+            </materialDesign:Card>
+        </StackPanel>
+        <StackPanel Background="#FF1F03BB" VerticalAlignment="Center" Grid.Column="2">
+          
+        </StackPanel>
+    </Grid>
+</Window>

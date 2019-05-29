@@ -1,0 +1,15 @@
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\ESDAData.dll.config
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\ESDAData.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\ESDAData.pdb
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\EntityFramework.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\MySql.Data.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\MySql.Web.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\EntityFramework.xml
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\bin\Debug\MySql.Web.xml
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\obj\Debug\ESDAData.csproj.CoreCompileInputs.cache
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\obj\Debug\ESDAData.csproj.CopyComplete
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\obj\Debug\ESDAData.dll
+C:\Users\Delilah Dessalegn\source\repos\ESDAHRMSystem\ESDAData\obj\Debug\ESDAData.pdb
